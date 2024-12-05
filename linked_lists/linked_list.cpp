@@ -54,31 +54,31 @@ int main()
 	std::cout << std::endl << "There are currently " << countNodes(head) << " nodes in the linked list. The current list is..." << std::endl;
 	printList(head);
 
-	// Prepend a node in the linked list
+	// Prepend a node in the linked list (func at 88)
 	insertAtHead(&head);
 
-	// Append a node
+	// Append a node (func at 105)
 	insertAtEnd(&head);
 
-	// Insert after a given node (Node 2)
+	// Insert after a node in the middle (func at 125)
 	insertAfterChosen(second);
 
 	std::cout << std::endl << "There are currently " << countNodes(head) << " nodes in the linked list. The current list is..." << std::endl;
 	printList(head);
 
-	// Delete a node at the start of the list 
+	// Delete a node at the start of the list (func at 143)
 	deleteAtHead(&head);
 	
-	// Delete a node at the end of a list
+	// Delete a node at the end of a list (func at 156)
 	deleteAtEnd(&head);
 
-	// Delete after a given node
+	// Delete after a given node (func at 174)
 	deleteAfterChosen(second);
 	
 	std::cout << std::endl << "There are currently " << countNodes(head) << " nodes in the linked list. The current list is..." << std::endl;
 	printList(head);
 	
-	// Delete the whole list
+	// Delete the whole list (func at 186)
 	deleteList(head);
 
 	return 0;
